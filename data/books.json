@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "name": "The Idiot",
+      "category": [
+        "Russian literature",
+        "Classics"
+      ],
+      "html": "<div class=\"book_pics_container\">\n  <a href=\"theidiot.html\"><img src=\"img/idioten-2-400x614.jpg\" alt=\"idioten\" class=\"book_pics\">\n    <div class=\"book_txt\">\n      <p><em>The Idiot</em> (pre-reform Russian: Идіотъ; post-reform Russian: Идиот, tr. Idiót) is a novel\n        by the 19th-century Russian author Fyodor Dostoevsky. It was first published serially in the journal The\n        Russian Messenger in 1868–69.</p>\n      <p>The title is an ironic reference to the central character of the novel, Prince (Knyaz) Lev Nikolayevich\n        Myshkin, a young man whose goodness, open-hearted simplicity and guilelessness lead many of the more\n        worldly\n        characters he encounters to mistakenly assume that he lacks intelligence and insight. </p>\n    </div>\n    <div class=\"book_title\">\n      <h2>The Idiot</h2>\n    </div>\n  </a>\n</div>"
+    },
+    {
+      "name": "Jerusalem",
+      "category": [
+      "Swedish literature",
+      "Classics",
+      "Nobel laureates"
+    ],
+      "html": "<div class=\"book_pics_container\">\n        <a href=\"jerusalem.html\"><img src=\"img/jerusalem400x614.jpg\" alt=\"jerusalem\" class=\"book_pics\">\n          <div class=\"book_txt\">\n            <p><em>Jerusalem</em> is a novel by the Swedish writer Selma Lagerlöf, published in two parts in 1901 and\n              1902. The\n              narrative spans several generations in the 19th century, and focuses on several families in Dalarna,\n              Sweden, and a community of Swedish emigrants in Jerusalem. It is loosely based on a real emigration that\n              took place from the parish of Nås in 1896.</p>\n            <p>As part of her research Lagerlöf went to visit Horatio and Anna Spafford at the American Colony,\n              Jerusalem.</p>\n          </div>\n          <div class=\"book_title\">\n            <h2>Jerusalem</h2>\n          </div>\n        </a>\n      </div>"
+    },
+    {
+      "name": "Anna karenina",
+      "category": [
+        "Russian literature",
+        "Classics"
+      ],
+      "html": "<div class=\"book_pics_container\">\n        <a href=\"annakarenina.html\"><img src=\"img/anna-karenina400x614.jpg\" alt=\"anna karenina\" class=\"book_pics\">\n          <div class=\"book_txt\">\n            <p><em>Anna Karenina</em> (Russian: «Анна Каренина», IPA: [ˈanːə kɐˈrʲenʲɪnə]) is a novel by the\n              Russian author\n              Leo Tolstoy, first published in book form in 1878. Many writers consider it the greatest work of\n              literature ever written, and Tolstoy himself called it his first true novel. It was initially\n              released in serial installments from 1873 to 1877 in the periodical The Russian Messenger.</p>\n            <p>A complex novel in eight parts, with more than a dozen major characters, it\n              deals with themes of betrayal, faith, family, marriage, Imperial Russian society, desire, and rural vs.\n              city life.</p>\n          </div>\n          <div class=\"book_title\">\n            <h2>Anna Karenina</h2>\n          </div>\n        </a>\n      </div>"
+    }
+  ]
+}

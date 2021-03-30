@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --main-bg-color: #e4dbcf;
+    --element-bg-color: #948979;
+    --text-color-dark: #6A8494;
+    --text-color-light: #CADAE0;
+    --text-color-white: #fff;
+    --header-font: "Open sans", sans-serif;
+}
+
+body {
+    background: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{
+    line-height: 180%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+dl {
+    font-size: 18px;
+    line-height: 170%;
+    margin: 30px 0 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text-color-dark);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======================= NAVIGATION ======================= */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: var(--element-bg-color);
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+nav h1 {
+    font-family: var(--header-font);
+    font-weight: lighter;
+    color: black;
+    font-size: 40px;
+    margin: 15px;
+}
+
+span.header_thicker_part {
+    font-weight: bold;
+    color: var(--text-color-white);
+}
+
+
+nav a#home {
+    justify-self: center;
+    text-decoration: none;
+}
+
+article #navigation {
+    align-items: center;
+    position: relative;
+}
+
+img#nav_menu {
+    background: none;
+    border-radius: 2px;
+}
+
+img#nav_menu.selected {
+    background-color: var(--text-color-dark);
+}
+
+img#nav_menu:hover {
+    background-color: var(--text-color-dark);
+}
+
+p#links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    line-height: 200%;
+    font-size: 21px;
+    background-color: var(--text-color-dark);
+    border-radius: 2px;
+    text-decoration: none;
+    color: var(--element-bg-color);
+    padding: 10px 20px 10px;
+    margin-top: 0;
+}
+
+p#links a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    padding: 3px;
+}
+
+p#links a:visited {
+    color: var(--text-color-light);
+}
+
+p#links a:hover {
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+}
+
+/* ======================= MAIN ======================= */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 30px 0;
+    grid-gap: 40px;
+    grid-row-gap: 35px;
+    justify-items: center;
+}
+
+main img{
+    width: 85%;
+    height: auto;
+    margin-top: 130px;
+}
+
+article#book_facts {
+    margin: 0 15px 0;
+}
+
+/* ======================= COMMENTS ======================= */
+
+article#comment_section {
+    text-align: center;
+}
+
+form#comment_form {
+    margin-top: 40px;
+}
+
+form label {
+    font-size: 22px;
+}
+
+form input[type="text"] {
+    border-radius: 3px;
+    padding: 14px;
+    border-width: 1px;
+    outline: none;
+    margin: 10px auto 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+}
+
+form input[type="text"]:focus, textarea#comment:focus, input#submit:focus {
+    border: 1px solid var(--text-color-dark);
+}
+
+textarea#comment {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 9px;
+    box-sizing: border-box;
+    border-width: 1px;
+    outline: none;
+    width: 100%;
+    margin: 0 auto 0;
+    resize: none;
+    height: 200px;
+    display: block;
+}
+
+form input#submit {
+    padding: 4px 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 10px;
+    outline: none;
+    border-width: 1px;
+    background-color: var(--text-color-light);
+}
+
+form input#submit:hover {
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
+}
+
+article#comments {
+    text-align: center;
+}
+
+table#comment_table {
+    table-layout: fixed;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+table#comment_table tr {
+    line-height: 140%;
+}
+
+table#comment_table tr:nth-child(odd){
+    background-color: var(--text-color-light);
+}
+
+tr:hover td.td_name, tr:hover td.td_comment{
+    border-bottom: 1px solid var(--text-color-dark);
+}
+
+table#comment_table td.td_name {
+    width: 7px;
+    word-break: break-all;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+table#comment_table td.td_comment {
+    width: 40px;
+    word-break: break-all;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+/* ======================= FOOTER ======================= */
+footer {
+    grid-area: footer;
+    background-color: var(--element-bg-color);
+    color: var(--text-color-white);
+    padding: 5px 15px;
+    margin-top: 40px;
+}
+
+article.flex-container {
+    display: flex;
+}
+
+img.img_responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    dl {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    /* ======================= MAIN ======================= */
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 55px;
+    }
+
+    main img{
+        width: 80%;
+        height: auto;
+    }
+
+    article#book_facts {
+        margin: 130px 15px 20px;
+    }
+
+    article#comment_section {
+        text-align: left;
+        margin-right: 40px;
+        width: 90%;
+    }
+
+    form#comment_form{
+        margin-top: 25px;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+
+    form input[type="text"] {
+        border-radius: 3px;
+        padding: 7px;
+        border-width: 2px;
+        outline: none;
+        margin-bottom: 15px;
+    }
+
+    textarea#comment{
+        border-width: 2px;
+    }
+
+    form input[type="text"]:focus, textarea#comment:focus {
+        border: 2px solid var(--text-color-dark);
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    dl {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    /* ======================= NAVIGATION ======================= */
+    nav {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ======================= MAIN ======================= */
+    main {
+        grid-template-columns: 2fr 3fr;
+        grid-row-gap: 75px;
+    }
+
+    main img{
+        width: 80%;
+        height: auto;
+    }
+
+    article#book_facts {
+        margin: 130px 15px 50px;
+    }
+
+    article#comments{
+        text-align: left;
+    }
+
+    article#comment_section {
+        text-align: left;
+        margin-right: 40px;
+        width: 90%;
+    }
+
+    form#comment_form{
+        margin-top: 25px;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+
+    form input[type="text"] {
+        border-radius: 3px;
+        padding: 7px;
+        border-width: 2px;
+        outline: none;
+        margin-bottom: 15px;
+    }
+
+    textarea#comment{
+        border-width: 2px;
+    }
+
+    form input[type="text"]:focus, textarea#comment:focus {
+        border: 2px solid var(--text-color-dark);
+    }
+
+}

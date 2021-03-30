@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerusalem</title>
+  <link rel="stylesheet" type="text/css" href="css/bookpage.css">
+</head>
+<body>
+<section class="grid-container">
+  <nav>
+    <article id="navigation">
+      <a href="#links"><img src="img/icon/menu_white.png" alt="menu" id="nav_menu"></a>
+      <p id="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#books">Books</a>
+        <a href="index.html#about">About us</a>
+      </p>
+    </article>
+    <a href="index.html" id="home"><h1>Åström's <span class="header_thicker_part">books</span></h1></a>
+  </nav>
+  <main>
+    <img src="img/jerusalem400x614.jpg" alt="jerusalem" class="img_responsive">
+    <article id="book_facts">
+      <h2>Jerusalem</h2>
+      <dl>
+        <dt>Author:</dt>
+        <dd>Selma Lagerlöf</dd>
+        <dt>Release Year:</dt>
+        <dd>1901-1902</dd>
+      </dl>
+      <p><em>Jerusalem</em> is a novel by the Swedish writer Selma Lagerlöf, published in two parts in 1901
+        and 1902. The narrative spans several generations in the 19th century, and focuses on several families in
+        Dalarna, Sweden, and a community of Swedish emigrants in Jerusalem. It is loosely based on a real emigration
+        that took place from the parish of Nås in 1896.
+      </p>
+      <p>As part of her research Lagerlöf went to visit Horatio and Anna Spafford at the American Colony, Jerusalem.
+      </p>
+      <p>The first four chapters of the first book were adapted into two ambitious films by Victor Sjöström in 1919 and
+        1920, Sons of Ingmar and Karin Daughter of Ingmar. Sjöström originally intended to film the entire suite, but
+        decided to cancel the project after the second film received unenthusiastic critical response. Gustaf
+        Molander picked up where Sjöström left and released his adaptation of the first book, Ingmarsarvet, in 1925,
+        followed by the second, Till Österland, in 1926. The Danish filmmaker Bille August directed a 1996 film
+        version with the title Jerusalem.
+        A stage adaptation, Ingmarsspelen, has become an annual tradition in Nås, Dalarna, where it has been performed
+        outdoors every year since 1959.</p>
+    </article>
+    <article id="comment_section">
+      <h2>Have you read this book?<br>Please leave a comment below!</h2>
+      <form id="comment_form">
+        <p>
+          <label for="name">Name:</label>
+        </p>
+        <p><input type="text" id="name" name="name" placeholder="enter your name" required="required">
+        </p>
+        <p id="namecheck"></p>
+        <p><label for="comment">Comment:</label></p>
+        <p><textarea id="comment" name="comment" placeholder="enter a comment" required="required"></textarea>
+        </p>
+        <p><input type="submit" id="submit" name="submit" value="submit"></p>
+      </form>
+    </article>
+    <article id="comments">
+      <h2>Comment section</h2>
+      <table id="comment_table">
+      </table>
+    </article>
+  </main>
+  <footer>
+    <p>Copyright 2021 Johan Åström</p>
+  </footer>
+</section>
+<script src="js/interactiveMenu.js"></script>
+<script src="js/bookForm.js"></script>
+</body>
+</html>

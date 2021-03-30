@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Idiot</title>
+  <link rel="stylesheet" type="text/css" href="css/bookpage.css">
+</head>
+<body>
+<section class="grid-container">
+  <nav>
+    <article id="navigation">
+      <a href="#links"><img src="img/icon/menu_white.png" alt="menu" id="nav_menu"></a>
+      <p id="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#books">Books</a>
+        <a href="index.html#about">About us</a>
+      </p>
+    </article>
+    <a href="index.html" id="home"><h1>Åström's <span class="header_thicker_part">books</span></h1></a>
+  </nav>
+  <main>
+    <img src="img/idioten-2-400x614.jpg" alt="the idiot" class="img_responsive">
+    <article id="book_facts">
+      <h2>The Idiot</h2>
+      <dl>
+        <dt>Author:</dt>
+        <dd>Fjodor Dostojevski</dd>
+        <dt>Release Year:</dt>
+        <dd>1868-1869</dd>
+      </dl>
+      <p><em>The Idiot </em> (pre-reform Russian: Идіотъ; post-reform Russian: Идиот, tr. Idiót) is a novel by the
+        19th-century Russian author Fyodor Dostoevsky. It was first published serially in the journal The Russian
+        Messenger in 1868–69.</p>
+      <p>The title is an ironic reference to the central character of the novel, Prince (Knyaz) Lev Nikolayevich
+        Myshkin, a young man whose goodness, open-hearted simplicity and guilelessness lead many of the more worldly
+        characters he encounters to mistakenly assume that he lacks intelligence and insight. In the character of Prince
+        Myshkin, Dostoevsky set himself the task of depicting "the positively good and beautiful man." The novel
+        examines the consequences of placing such a unique individual at the centre of the conflicts, desires, passions
+        and egoism of worldly society, both for the man himself and for those with whom he becomes involved.</p>
+      <p>Joseph Frank describes The Idiot as "the most personal of all Dostoevsky's major works, the book in which he
+        embodies his most intimate, cherished, and sacred convictions." It includes descriptions of some of his most
+        intense personal ordeals, such as epilepsy and mock execution, and explores moral, spiritual and philosophical
+        themes consequent upon them. His primary motivation in writing the novel was to subject his own highest ideal,
+        that of true Christian love, to the crucible of contemporary Russian society.</p>
+      <p>The artistic method of conscientiously testing his central idea meant that the author could not always predict
+        where the plot was going as he was writing. The novel has an awkward structure, and many critics have commented
+        on its seemingly chaotic organization. According to Gary Saul Morson, "The Idiot violates every critical norm
+        and yet somehow manages to achieve real greatness." Dostoevsky himself was of the opinion that the experiment
+        was not entirely successful, but the novel remained his favourite among his works. In a letter to Strakhov he
+        wrote: "Much in the novel was written hurriedly, much is too diffuse and did not turn out well, but some of it
+        did turn out well. I do not stand behind the novel, but I do stand behind the idea."</p>
+    </article>
+    <article id="comment_section">
+      <h2>Have you read this book?<br>Please leave a comment below!</h2>
+      <form id="comment_form">
+        <p>
+          <label for="name">Name:</label>
+        </p>
+        <p><input type="text" id="name" name="name" placeholder="enter your name" required="required">
+        </p>
+        <p id="namecheck"></p>
+        <p><label for="comment">Comment:</label></p>
+        <p><textarea id="comment" name="comment" placeholder="enter a comment" required="required"></textarea>
+        </p>
+        <p><input type="submit" id="submit" name="submit" value="submit"></p>
+      </form>
+    </article>
+    <article id="comments">
+      <h2>Comment section</h2>
+      <table id="comment_table">
+      </table>
+    </article>
+  </main>
+  <footer>
+    <p>Copyright 2021 Johan Åström</p>
+  </footer>
+</section>
+<script src="js/interactiveMenu.js"></script>
+<script src="js/bookForm.js"></script>
+</body>
+</html>
